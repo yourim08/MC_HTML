@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃_시멘틱태그</title>
+    <style>
+        * {
+            box-sizing: border-box;  /* 박스 사이즈에 border 포함함*/
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: gray;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar{
+            display: flex;
+            background-color:antiquewhite;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar>ul {
+            list-style: none;
+            display: flex;
+            gap : 150px;
+            padding: 10px;
+        }
+
+        .navbar > img {
+            display: inline-block;          
+            max-width : 50px;
+        }
+
+        .navbar > li {
+            
+            color: white;
+        }
+        aside {
+            width:20%;
+            float: left; /* 왼쪽으로 보내기 */
+            padding: 10px;
+        }
+
+        section {
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        article {
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: gray;
+            /* float땜에 띄워져서, 배경색이 nav까지 침범함 */
+            /* 블록 처리하고 clear해서 해결 */
+            display: block;  
+            clear : both;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media screen and (max-width:600px) {
+            aside, section, article{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>header</h2>
+    </header>
+    <nav class="navbar">
+        <img src="images/NongDam.png">
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">자기소개</a></li>
+            <li><a href="#">포트폴리오</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>this is aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quis eum animi. Natus labore quas hic tempore doloribus voluptatibus, dignissimos sit laborum voluptatem vitae illo animi in aut, quae ipsum?</p>
+            
+        </aside>    
+        <section>
+            <h2>this is section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quis eum animi. Natus labore quas hic tempore doloribus voluptatibus, dignissimos sit laborum voluptatem vitae illo animi in aut, quae ipsum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, error deserunt. Voluptates magni autem sequi aut nesciunt, tempore sit impedit distinctio dignissimos ipsa mollitia exercitationem quo, id omnis blanditiis quibusdam?</p>
+
+        </section>
+        <article>
+            <h2>this is article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quis eum animi. Natus labore quas hic tempore doloribus voluptatibus, dignissimos sit laborum voluptatem vitae illo animi in aut, quae ipsum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, error deserunt. Voluptates magni autem sequi aut nesciunt, tempore sit impedit distinctio dignissimos ipsa mollitia exercitationem quo, id omnis blanditiis quibusdam?</p>
+            
+        </article>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

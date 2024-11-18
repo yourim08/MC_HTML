@@ -1,0 +1,53 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭 다운 메뉴(포지션, 블록/인라인 요소, 인라인블록요소)</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown button{
+            background-color: hsl(0, 0%, 80%);
+            padding : 10px 15px;
+            color : white;
+            border : none;
+            cursor: pointer;
+        }
+        .dropdown a{
+            display:block;
+            color: black;
+            text-decoration: none;
+            padding : 10px 15px;
+        }
+        .dropdown .content{
+            background-color: hsl(0, 0%, 95%);
+            min-width: 100px;
+            box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+            position: absolute;
+            display: none;
+        } 
+        .dropdown:hover .content{
+            display:block;    
+        }
+        .dropdown:hover button{
+            background-color: hsl(0, 0%, 70%);
+        }
+        .dropdown a:hover{
+            background-color: hsl(0, 0%, 90%);
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>급식메뉴</button>
+        <div class="content">
+            <a href="#">떡볶이</a>
+            <a href="#">오뎅국</a>
+            <a href="#">닭볶음탕</a>
+        </div>
+    </div>
+</body>
+</html>

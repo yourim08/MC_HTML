@@ -1,0 +1,48 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 실습</title>
+    <style>
+        .container {
+            display:flex ;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            border : 5px solid black;
+            height : 90vh;
+            justify-content: space-between;
+            row-gap: 1em;
+            column-gap: 3em;
+        }
+        .box {
+            width: 150px; 
+            height: 150px;
+            font-size: 8em;
+            border-radius: 15px; 
+            text-align: center;
+        }
+        #box1 {
+            background-color: bisque; 
+        }
+        #box2 {
+            background-color: skyblue; 
+        }
+        #box3 {
+            background-color: rosybrown; 
+        }
+        #box4 {
+            background-color: aquamarine; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

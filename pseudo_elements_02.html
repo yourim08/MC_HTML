@@ -1,0 +1,43 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소</title>
+    <style>
+        h1::first-letter{
+            color: red;
+            font-size: 1.8em;
+            font-style: italic;
+        }
+        p::first-line{
+            color:blue;
+        }
+        #fruit li::before{
+            content : "✔️";
+        }
+        #apple::after{
+            content : "🍎";
+        }
+        #cherry::after{
+            content : "🍒";
+        }
+        #grape::after{
+            content : "🍇";
+        }
+        ul>li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus alias tenetur illum, in commodi repudiandae? Libero soluta reiciendis possimus totam eveniet minima veritatis inventore, autem reprehenderit sequi temporibus eius quae!</p>
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="cherry">cherry</li>
+        <li id="grape">grape</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+body{
+    font-family: "Dongle";
+    font-size: 30px;
+    margin : 0 auto;
+} 
+h1{
+    text-align: center;
+}
+.navbar ul{
+    background-color: hsl(159, 82%, 73%);
+    margin: 0px;
+    padding : 0px;
+    list-style: none;
+    overflow :hidden;
+}
+.navbar a{
+    color:white;
+    text-decoration: none; 
+    padding : 15px;
+    display:block;
+}
+.navbar a:hover{
+    background-color: hsl(194, 72%, 51%);
+}
+.navbar li{
+    float: left;
+}
+main{
+    margin-left :20px;
+    margin-right : 20px;
+} 

@@ -1,0 +1,31 @@
+<!-- 작성자 : 1113 전유림-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        li:hover {background: yellow; font-size: 20px;}
+        li {color : green}
+        a:link {color : red}
+        a:visited {color: blue;}
+        ul {list-style-type: none;}
+        a {text-decoration: none;}
+        h2::first-letter {color: red;}
+    </style>
+</head>
+<body>
+    <h2>1학기 과목</h2>
+    <hr>
+    <div>  <!--묶어주기-->
+        <div>미디어콘텐츠 일반 <strong>학습내용</strong></div>
+        <ul>
+            <a href="https://m.naver.com/"><li>HTML</li></a>
+            <a href="https://www.daum.net/"><li><strong>CSS</strong></li></a>
+            <a href="https://www.e-mirim.hs.kr/main.do"><li>JAVASCRIPT</li></a>
+        </ul>
+        <div>60점 이하는 F!</div>
+    </div>
+</body>
+</html>

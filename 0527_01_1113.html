@@ -1,0 +1,62 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그들</title>
+</head>
+<body>
+    <form action="student_enter.php" method="POST">
+        <div>
+            <label for="sid">아이디 : </label>
+            <input type="text" id="sid" name="sid" placeholder="학생아이디" required> 
+        </div>
+        <br>
+        <div>
+            <label for="spwd">비밀번호 : </label>
+            <input type="password" id="spwd" name="spwd" placeholder="학생비밀번호" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="semail">이메일 주소 : </label>
+            <input type="email" id="semail" name="semail" placeholder="student@e-mirim.hs.kr" required>
+        </div>
+        <br>
+        <div>
+            <label for="stel">전화번호 : </label>
+            <input type="tel" id="stel" name="stel" placeholder="010-1234-4567" required>
+        </div>
+        <br>
+        <div>
+            <label for="sdate">출생년도 : </label>
+            <input type="date" id="sdate" name="sdate" placeholder="연도-월-일" >
+        </div>
+        <br>
+        <div>
+            <label for="snum">학생번호 : </label>
+            <input type="number" id="snum" name="snum" value="1" min="1" max="19" required>
+        </div>
+        <br>   
+        <div>
+            <label for="major">전공학과 : </label>
+            <label for="soft">소프트웨어과</label>
+            <input type="radio" id="soft" name="major">
+
+            <label for="design">디자인과</label>
+            <input type="radio" id="design" name="major">
+
+            <label for="sol">웹솔루션과</label>
+            <input type="radio" id="sol" name="major">
+        </div>     
+        <br>
+        <div>
+            <input type="reset">            
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

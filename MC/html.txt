@@ -1,0 +1,306 @@
+
+---------기본 ---------
+ol : order list 순서 있는
+ul : unorder list 순서없는
+li : 리스트
+html : 5 = ! tab
+<hr> 선 생김  (닫을 필요 없음)
+<alt>사진설명<alt>
+<a href="도메인">바로가기<a>
+<target> 속성
+_blank 링크가 새창으로 열림
+_self 링크가 있는 화면에서 열림
+_parent 프레임
+ctrl / : 주석
+스타일 중첩 가능함  h3,li { color : red ;  }
+- UTF-8은 8진수, 안깨지게 하기 위해
+- <!DOCTYPE html> html이라는 것 알려줌
+- ul>li*3>a 하면 a링크 가진 ul안에 li 3개 만듦.
+- hsl : 색, 채도, 명도 조절
+------텍스트 꾸미기-----
+&lt : <
+&gt : >
+&nbsp : 탭
+&quot : 큰 따옴표
+&divide; :  나누기
+&radic : 루트
+p*6 --> 6줄
+
+----------CSS---------
+cascading style sheet
+문자 색, 모양등 외관 꾸밈
+<style>
+h { background-colour : ; text-align : center; margin-left : 30px; font-size : 30px;}
+
+</style>
+
+baclground color ---> 배경색 (블록)
+span/p/strong color --> 글자부분색 (인라인)
+text-decoration --> 밑줄,밑줄없애기 등등
+text-align --> 글자 위치
+font-size --> 글자크기 (px)
+font-weight : bold --> 굵게하기
+margin-left/right ---> 양옆 공백 (px)
+margin : auto --> 가운데 고정 (크기달라져도 계속 가운데)
+margin-left : auto --> 오른쪽 고정
+  *  :  전체 다
+width : 50px --> 크기줄이기
+list-style : none ---> ul점 없애기
+
+-----10진수와 16진수 색 표현-----
+섞을 수록 어두워짐 ---> 감산혼합
+작을수록 검은색 ( 0 )
+클수록 흰색 ( f )
+
+---------RGB or CMYK-------
+섞을 수록 밝아짐---> 가산혼합
+#8A2BE2 (헥사코드) ---> 16*16가지 경우의수 (0 ~ 255 까지 입력가능), 24비트 색 구현가능,,,,,, 가장많이 사용됨!!!!!!!!!!!
+8A = 레드
+2B = 그린
+E2 = 블루
+
+rgb(138,43,226)
+138 = 레드
+43 = 그린
+226  = 블루
+
+#00ff00 --> 초록색
+#999999 --> 무채색 ( 차이 미세하면 무채색=회색)
+#333333 --> 999999보다 어두움 ( 숫자가 낮을 수록 어두움)
+
+#00e100 --> 밝은 초록
+#003700 --> 어두운 초록
+----------글씨체--------
+serif 체 = 명조체 (휘어짐있어 눈이 편함)
+산스체 = 고딕체 (짧은 글 읽기 편함)
+font-family : Arial, "arial 없을 때", Serif  : <--- 그것도 없을 때 이거랑 유사한거 찾음 
+font-size : 1.6em; 현재폰트의 1.6배 크기
+
+
+--------블록, 인라인------
+블록 --> 전체 
+인라인 --> 부분 (span, strong등 )
+
+-----네비게이션 밑줄 없애기-----
+text-decoration : none;
+
+
+------table----
+표가 table  (행과 열)
+행 : 로 (row) 가로
+열 : 칼람? (column) 세로
+table --> 전체
+caption --> 제목
+thead --> 표의 헤드( 아침, 점심, 저녁)
+tr --> 줄 (table row) , td 여러개 있을때 넣는다.
+td --> 내용블럭 (table data)
+th --> 제목, body랑 head랑 위치 바꿔도 항상 위에 있음
+border --> 라인
+tbody --> 표의 바디
+tr>tr*3  ---> 빠른버전  (에밋)
+tfoot --> 합계  (바디보다 먼저와야됨)
+
+
+-----------병합----------
+span : 기간 (row열 ,  column행 쓴다)
+
+세로로 합치기 --> rowspan (1번줄, 2번줄, 3번줄)
+가로로 합치기 --> colspan (1열,2열,3열)
+
+<td colspan="3"><td>
+<td rowspan="3"><td>
+
+-------박스모델--------
+탑 라이트 바텀 레프트 순으로 읽는다
+margin : 50px 10px 50px 10px
+margin : 50px 10px  //탑바텀 50, 레라 10 
+
+-----------패딩 -----------
+박스 선 : border
+박스안에 콘텐츠와 보더 사이 : padding
+보더와 페이지 사이 : margin
+margin : 0 auto;  : 가운데 정렬
+
+------------클래스, id----------
+클래스 : . (중복가능)
+id : # (중복 X)
+가상 클래스 : 여러기능
+
+자식 선택자 : div > strong  
+자손 선택자 : ul strong   ( ul안에있는 스트롱이 바뀜. ul이 부모...? )
+전체 셀렉터 : * 전체다함
+가상 클래스 셀렉터 : 마우스 갖다대면 색 바뀜 li : hover
+			     링크 색 a : link
+			     링크 없애기 text-decoration : none
+
+
+-------------입력폼--------------
+
+- <form [속성 = "속성값"]> 여러 폼 요소 </form>
+- 속성 action 상위 프로그램 (순서)
+- label for=" a " 랑 id=" a "가 같아야함.
+- input type id name 이 한 세트 , name을 넣어야 하나의세트로 묶여서 하나만 선택을 할 수있게된다.
+- form method="post" : post형식으로 보냄
+
+
+- fieldset : 박스만듬
+- legend : 이름
+- value : 컴퓨터한테 이게 뭔지 알려줌, number에서는 초기값 나타냄
+- placeholder : 예시보여줌
+- textarea : 메모창, (cols raws 지정해야됨)
+- number : 숫자 올리기/내리기 (max, min 필요)
+- required : 필수값으로 지정
+
+
+-----버튼-----
+- submit : 제출
+- reset : 초기화
+- button : 버튼
+- onclick="alert('')" : 온따옴표 안 문구 출력
+---------------
+
+- alt shift 아래방향키 : 복사!!!
+- radio : 똥그라미 선택키
+- 라디오는 중복 X,  체크는 중복 O
+
+--------------float--------------
+- 띄운다는 개념
+- 아래있던 글이 옆으로감
+- float : right; -->왼쪽 (오왼반대인거 기억하기)
+- display : flow-root -->이미지 안나가게 고정 
+- lorem : 이상한 성경구절
+
+------------FN + F12------------
+- 개발자가 보는 툴
+- 컴퓨트 누르면 마진 패딩 볼수있다.
+
+2학기-------------------------2학기------------------------------------------------------------------------------------------------------------
+----시멘틱 구조------
+- 레이아웃을 만들기 위함
+- header
+- nav	      |
+- section  | aside
+- article   |
+- footer
+- 고딕 : 판독성 (표지판)
+- 명조 : 가독성 (교과서)
+
+----------flex-----------
+- flex : 가로/세로 정렬
+- flex-direction : 방향 지정.  (row, column, row-reverse, column-revers)   ( row가 기본값 )
+- **** display : flex; ****   :   세로로 있던 박스들을 container (박스 다 감싸고 있음) 을 정렬함으로서 세로 정렬함.
+
+- em : 전체에 비례하여 커짐
+- font-size : 그냥 값이 커짐
+
+- vh : 전체의 --%만큼 높이 차지 
+--> height : 90vh;
+
+- justify-content: center; : 가운데 정렬, 수평
+- align-items: center; : 가운데 정렬, 수직
+--> flex-start가 기본. (왼쪽에 붙음)
+--> flex-end : 오른쪽
+--> space-around : 왼쪽 살짝 띄고 간격 일정
+--> space-between : 왼쪽 붙이고 간격 일정 **** 가장 많이 사용 ****
+--> space-evenly : 왼쪽이 붙었다가 떼졌다가 함
+
+- flex-wrap : 감싸다. 줄이면 4가 아래로 떨어짐
+--> flex-nowrap : 기본값. 안떨어짐 줄바꿈 안됨
+
+-------------float--------------
+- 이미지는 블록요소라서 칸을 다 차지하고 있음. (눈에는 비어보여도 실제로는 차지함)
+- 그래서 이미지 옆에 글을 넣으려면 float로 띄워주는 작업이 필요함.
+- left하면 오른쪽이 비어짐. 즉, 반대임
+
+- display : flow-root : 보더 밖으로 사진이 안튀어나옴.
+
+--------인라인과 블록--------
+- 인라인 : 부분만 (span, a)
+- 블록 : 전체 (div , p)
+- 인라인 - 블록 : 높이, 너비값을 가질 수 있고 옆에 짝꿍을 가질 수 있음.
+
+- 블록과 인라인을 바꾸고 싶다 --> display : block / inline (인라인-> 블록 할때 줄바꿈 됨.. 왜징)
+- 인라인은 높이, 너비값을 지정할 수 없다.***********
+- 블록은 가능
+
+----------오버플로우--------
+- overflow : hidden --> 넘치는거 숨기기
+
+-----------홈페이지--------
+- nav>ul>li*4>a{home} 하면  <li><a href="">home</a></li> 이렇게됨
+
+-------------포지션-------------
+- 위치 : 리렉티브, 앱솔루트 주로씀..
+- relative : 노멀한, 일반적인 위치
+- absolute : 바로 위의 것의 영향을 받음. 포지션 기준이 바로 위에것이 됨.
+- fixed : 고정되서 안움직임
+- top, right, bottom, left가 있음.
+- hsl : h 색상 s 채도 l 명도
+--> s + l = 톤 ,  톤 맞추는 것을 "톤인톤 배색"
+--> 톤온톤 배색 : 색 얹는 거  
+
+------------백그라운드----------
+- background-image: url(images/chiikawa.png); /* 해상도 작은거는 반복됨...*/
+- background-repeat: no-repeat; --> 반복 없앰
+- background-position: center;   --> 가운데  , 수평정렬
+- background-attachment: fixed; --> 고정 , 수직정렬
+- background-size: cover; 	    --> 커짐
+- border-radius: 20px; :		    --> 둥글어짐
+- box-shadow: 5px 10px 20px;   --> 오른쪽, 아래, 강도 
+- box-shadow: 5px 10px 20px hsla(0, 0%, 0%, 0.7);  --> 그림자와 투명도
+- backdrop-filter: blur(2px);  	    --> 뽀샤시 ~~~~
+
+------------가상 클래스------------
+nth-child( m )  : m번째 자식만 바꿈
+ul > li*9 { 이 내용이 li안에 들어감 } 
+
+li:not(:hover){  	 /*hover를 제외한 나머지것*/
+            background-color: gray;
+        }
+
+odd : 홀수번째 자식만 바뀜
+even :  짝수번째 자식만 바뀜
+3n+1과 같이 방정식도 넣을 수 있음
+
+-------------가상 요소----------
+style에 :: 붙임
+        p::before
+        p::after
+    
+
+윈도우 + ;  : 이모지
+
+
+-----------------z-index-------------
+- 요소가 쌓이는 순서를 결정한다
+- 기본값은 auto, 정수값을 정의한다
+- 값이 클수록 전면에 표시된다.
+
+
+---------------position-------------
+- relative : 노말함
+- absolute : 가장 가까이있는 조상에 대해서 relative
+- fixed : 뷰 포트에 relative, (스크롤 내려도 안움직임)
+- sticky : 스크롤에 딱 붙음  (스크롤 내리면 움직임)
+- static : 요소를 문서의 흐름에 따라 배치
+
+
+--------------inherit 상속------------
+/*p태그에서 정해지면 자기값으로 바뀜, border, display은 상속이 안된다.*/
+
+inherit : 상위 요소 값 상속
+initial : 초기값 사용
+unset : 상속 가능한 것은 상속, 아닌 것은 (border, width/height 등) initial
+
+
+-------------레이아웃---------------
+box-sizing: border-box   :   값이 초과되서 넘어가는 일이 없다.
+
+
+--------------시멘틱태그------------
+- 예전에는 div같은 의미없는것을 사용, 지금은 header, nav, main등의 시멘틱 태그 사용
+- 시멘틱태그는 웹 표준이다.
+
+
+------------------ IA (정보구조도) -----------------
+- 구조를 나타내는 그림

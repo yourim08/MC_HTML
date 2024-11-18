@@ -1,0 +1,58 @@
+<!-- 작성자 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱태그_header태그 연습</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            background-color: bisque;
+            justify-content: space-between;
+            padding : 20px 10%;
+            align-items: center;
+            height : 60px;
+        }    
+        header>nav>ul {
+            display:flex;
+            gap: 30px;
+        }
+        header>nav>ul>li {
+            list-style: none;
+        }
+        header>nav>ul>li>a {
+            text-decoration: none;
+            color:blue;
+        }
+        header>nav>ul>li>a:hover {
+            font-weight: bolder;
+            color:aqua
+        }
+        header>h1{
+            color:red;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>company J</h1>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="sear">search</label>
+        <input type="search" id="sear">
+        <input type="submit">
+    </form>
+</header>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 태그_실습</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        header{
+            display: flex;
+            justify-content: space-between; /*수평 정렬*/
+            align-items: center; /*수직 정렬*/
+            background-color: aqua;
+            padding : 20px 10%;
+            height: 80px;
+        }
+        .gnb_nav_menu{
+            display: flex;
+            gap: 50px;
+        }
+        header>nav>ul>li>a{
+            text-decoration: none;
+            font-weight: 800;
+            color:black;
+        }
+        header>nav>ul>li>a:hover{
+            color:red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jeon</h1>
+        <nav>
+            <ul class="gnb_nav_menu">
+                <li><a href="#">프론트</a></li>
+                <li><a href="#">html</a></li>
+                <li><a href="#">레이아웃</a></li>
+            </ul>
+        </nav>
+        <form>
+            <button>로그인</button>    
+        </form>
+    </header>
+</body>
+</html>

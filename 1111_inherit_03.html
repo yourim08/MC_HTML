@@ -1,0 +1,55 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unset_상속_03</title>
+    <style>
+        div {
+            /*div에 36px을 줬는데...! p태그도 바뀜...!! (상속) */
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            font-size: 36px;
+            border: 3px dashed red;
+            color: red;
+        }
+
+        
+        /* inherit : 상위요소  값 상속
+        p{ 
+        font-size: 24px; 
+        border : 1px solid blue;
+        color : inherit;
+        }*/
+
+        /* initial : 초기값(기본값) 사용
+        p{ 
+        font-size: 24px;
+        border : 1px solid blue;
+        color : initial; 
+        } */
+
+        /*unset : */
+        p {
+            font-size: unset;   /* 36 px*/
+            border: unset;      /* 상속 X, initial */
+            color: unset;       /* red */
+            width: unset;       /* 상속 X, initial */
+            height: unset;      /* 상속 X, initial */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>가운데 p태그</p>
+    </div>
+</body>
+
+</html>

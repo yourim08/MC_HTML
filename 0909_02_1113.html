@@ -1,0 +1,29 @@
+<!-- 작성자 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 블록 요소</title>
+    <style>
+        div{
+            display:inline-block;
+            background-color: hsl(150, 100%, 83%);
+            width:150px;
+            height:150px;
+        }
+        a{
+            display:inline-block;
+            background-color: hsl(230, 100%, 83%);      
+            width:150px; /*인라인 요소는 width와 height가 안먹음.. 때문에 블록으로 변환*/
+            height:150px;
+        }
+        /*block은 옆에 누군가가 올 수 없음. (빈공간 차지하고있음) 
+        때문에 인라인 블록으로 해서 공간 비워주기...*/
+    </style>
+</head>
+<body>
+    <div>div</div>
+    <a>a</a>
+</body>
+</html>

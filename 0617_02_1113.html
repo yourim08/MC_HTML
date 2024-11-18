@@ -1,0 +1,37 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id와 class를 활용한 박스모델2</title>
+    <style>
+        /*
+        body{
+            margin-top : 0px; p속성때문에 안붙음
+        }*/
+        *{
+            margin: 0;
+            margin :20px;
+        }
+        .box{
+            border :10px outset bisque; 
+            width : 250px;
+            height :250px;
+            font-size : 14px;
+        }
+        #box01{
+            background-color: brown;
+            padding-right: 20px;
+        }
+        #box02{
+            background-color: aqua;
+            padding : 50px 20px
+        }
+    </style>
+</head>
+<body>
+    <p class="box" id="box01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate commodi eius, aliquid modi deserunt inventore exercitationem in incidunt assumenda minus natus tempora cumque doloribus harum qui nam minima quibusdam.</p>
+    <p class="box" id="box02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate commodi eius, aliquid modi deserunt inventore exercitationem in incidunt assumenda minus natus tempora cumque doloribus harum qui nam minima quibusdam.</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 폼 요소들</title>
+    <style>
+        .container{
+            width:600px;
+            margin:0 auto;
+
+        }
+        ul{
+            list-style: none;
+        }
+        .title{
+            font-weight:bold;
+            width:80px;
+            float:left;
+        }
+        fieldset{
+            margin:15px 10px;
+        }
+        fieldset legend{
+            font-weight: bold;
+            font-size:18px;
+            color:purple;
+        }
+        ul li{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>상품 주문서</h1>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="pro_name" class="title">이름</label>
+                    <input type="text" id="pro_name" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label f0r="pro_tel01" class="title">연락처</label>
+                    <input type="tel" id="pro_tel01" placeholder="연락가능한 번호" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="pro_addr" class="title">주소</label>
+                    <input tyep="text" id="pro_addr" placeholder="주소를 입력하세요" required>
+                </li>
+                <li>
+                    <label for="pro_tel02" class="title">전화번호</label>
+                    <input tyep="tel" id="pro_tel02" placeholder="전화번호를 입력하세요" required> 
+                </li>
+                <li>
+                    <label for="pro_memo" class="title">메모</label>
+                    <textarea id="pro_memo" cols="28" rows="2" required></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox">뽕따</label>
+                    <label> <input type="number" value="0" min="0" max="10">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">팥빙수</label>
+                    <label> <input type="number" value="0" min="0" max="10">개</label> 
+                </li>
+                <li>
+                    <label><input type="checkbox">메로나</label>
+                    <label> <input type="number" value="0" min="0" max="10">개</label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시작성">
+    </form>
+    </div>
+</body>
+</html>

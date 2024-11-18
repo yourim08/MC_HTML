@@ -1,0 +1,47 @@
+<!-- 작성자 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 블록 요소(이미지 갤러리)</title>
+    <style>
+        .gallery{
+            display: inline-block;
+            border: 1px, solid,hsl(0, 0%, 50%);
+            width:200px;
+        }
+        .gallery .description{
+            padding:10px;
+            text-align: center;
+        }
+        .gallery:hover{
+            border: 2px, solid,hsl(0, 0%, 30%);
+        }
+        .gallery img{
+            width:100%; /*갤러리 크기 만큼 사진 크기 조정*/
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="images/NongDam.png" target="_blank">
+            <img src="images/NongDam.png" alt="농담곰">
+        </a>
+        <div class="description">농담곰</div>
+    </div>
+    <div class="gallery">
+        <a href="images/Robot.png" target="_blank">
+            <img src="images/Robot.png" alt="로봇">
+        </a>
+        <div class="description">로봇</div>
+    </div>
+    <div class="gallery">
+        <a href="images/chiikawa.png" target="_blank">
+            <img src="images/chiikawa.png" alt="치아카와">
+        </a>
+        <div class="description">치이카와</div>
+    </div>
+</body>
+</html>

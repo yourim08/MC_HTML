@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lobster&display=swap');
+body{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}  
+
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+header>h1{
+    font-size: 40px;
+    color:violet;
+}
+header>nav>ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+header>nav>ul>li>a{
+    font-size:20px;
+    color: blue;
+    text-decoration: none;
+}
+header>nav>ul>li>a:hover{
+    font-weight:1000;
+    color:blueviolet;
+}
+main{
+    margin-left:25px;
+}
+main>h3{
+    color:blue;
+}

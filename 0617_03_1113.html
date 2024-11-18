@@ -1,0 +1,62 @@
+<!-- 작성자 : 1113 전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력폼_체크박스, 라디오버튼 등</title>
+    <style>
+        ul{
+            list-style : none; /*점 없앰*/
+        }
+    </style>
+</head>
+<body>
+    <h1>나의 음식 취향</h1>
+    <form method="post" action="/fa_fruit.php">
+        <fieldset>
+        <legend>탕수육 취향은?</legend>
+        <ul>
+            <li>
+                <label for="b_eat">부먹</label>
+                <input type="radio" id="b_eat" name="eat" value="b_eat">
+            </li>
+            <li>
+                <label for="t_eat">찍먹</label>
+                <input type="radio" id="t_eat" name="eat" value="t_eat">
+            </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+            <legend>좋아하는 과일은?</legend>
+            <ul>
+                <li>
+                    <label for="apple">사과</label>
+                    <input type="checkbox" id="apple" name="fruit" value="apple">
+                </li>
+                <li>
+                    <label for="wm">수박</label>
+                    <input type="checkbox" id="wm" name="fruit" value="wm">
+                </li>
+                <li>
+                    <label for="banana">바나나</label>
+                    <input type="checkbox" id="banana" name="fruit" value="banana">
+                </li>
+                <li>
+                    <label for="grape">포도</label>
+                    <input type="checkbox" id="grape" name="fruit" value="grape">
+                </li>
+                <li>
+                    <label for="mango">망고</label>
+                    <input type="checkbox" id="mango" name="fruit" value="mango">
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <button type="submit">제출하기</button>
+        <button type="reset">리셋하기</button>    
+        <button type="button" onclick="alert('좋아하는 여름과일!!')">버튼</button>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- 작성자 : 1113전유림 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 익히기 02</title>
+    <style>
+        table {width: 900px; margin : 0 auto;} /*상대값 %, 절대값 px*/ 
+        caption {color :brown; text-align: center; font-size:20px; font-family: 나눔명조, 함초롱바탕,serif;} /*,로 이어주기*/
+        thead {background-color: aquamarine;}
+        tfoot {background-color: skyblue;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>피자 주문서</caption>
+        <thead>
+            <tr><th>메뉴</th><th>수량</th><th>금액</th></tr>    
+        </thead>
+        <tbody>
+            <tr><td>치즈</td><td>1</td><td>20,000</td></tr>            
+            <tr><td>하와이안</td><td>2</td><td>15,000</td></tr>
+            <tr><td>고구마</td><td>1</td><td>10,000</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td>합계</td><td>4</td><td>60,000</td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>

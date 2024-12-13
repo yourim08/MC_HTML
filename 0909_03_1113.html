@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인라인 블록 요소(이미지 갤러리)</title>
     <style>
+     .gallery:hover{
+            border: 2px, solid,hsl(0, 0%, 30%);
+        }
         .gallery{
             display: inline-block;
             border: 1px, solid,hsl(0, 0%, 50%);
@@ -15,9 +18,7 @@
             padding:10px;
             text-align: center;
         }
-        .gallery:hover{
-            border: 2px, solid,hsl(0, 0%, 30%);
-        }
+       
         .gallery img{
             width:100%; /*갤러리 크기 만큼 사진 크기 조정*/
             height: auto;

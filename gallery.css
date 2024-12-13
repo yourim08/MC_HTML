@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    /*header안의 요소들 정렬*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10.5%;
+    background-color: #7fffd4;
+    height: 80px;
+}
+
+.gnb_nav_menu {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+}
+
+.gnb_nav_menu>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo:hover {
+    color: #1100fc;
+    font-weight: 700;
+}
+
+.my:hover,
+.portfolio:hover,
+.gallery:hover {
+    color: #1100fc;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 900px;
+    padding: 20px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.gallery_content {
+    width: 13%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery_content .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery_content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+}

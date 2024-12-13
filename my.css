@@ -1,0 +1,157 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    /*header안의 요소들 정렬*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10.5%;
+    background-color: #7fffd4;
+    height: 80px;
+}
+
+.gnb_nav_menu {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+
+}
+
+.gnb_nav_menu>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.logo:hover {
+    color: #1100fc;
+    font-weight: 700;
+}
+
+.my:hover,
+.portfolio:hover,
+.gallery:hover {
+    color: #1100fc;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    min-height: 900px;
+    /*최소 높이 설정*/
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-size: 13.5px;
+    font-weight: 500px;
+}
+
+.my_img {
+    position: relative;
+    left: 200px;
+    bottom: 790px;
+    height: 300px;
+    width: 340px;
+}
+
+.my_github,
+.my_instar {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 130px;
+}
+
+.my_github {
+    position: absolute;
+    left: 300px;
+}
+
+.my_instar {
+    position: absolute;
+    left: 370px;
+}
+
+.my_main_text {
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 190px;
+    right: 195px;
+}
+
+.my_text_1 {
+    position: absolute;
+    top: 260px;
+    right: 330px;
+}
+
+.my_text_2 {
+    position: absolute;
+    top: 295px;
+    right: 454.5px;
+}
+
+.my_text_3 {
+    position: absolute;
+    top: 330px;
+    right: 310px;
+}
+
+.my_text_4 {
+    position: absolute;
+    top: 365px;
+    right: 405px;
+}
+.my_text_5{
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 460px;
+    right: 380px;
+}
+.front{
+    position:absolute;
+    top: 530px;
+    right:450px;
+    width:160px;
+    height:50px;
+}
+.db{
+position: absolute;
+top: 540px;
+right: 340px;
+width: 50px;
+height: 40px;
+}
+.figma{
+position: absolute;
+top: 540px;
+right:290px;
+width:30px;
+height: 40px;
+}
+.java{
+    position: absolute;
+    top: 530px;
+    right:370px;
+    width: 100px;
+    height: 50px;
+}

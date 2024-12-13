@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    /*header안의 요소들 정렬*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10.5%;
+    background-color: #7fffd4;
+    height: 80px;
+}
+
+.gnb_nav_menu {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+}
+
+.gnb_nav_menu>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.logo:hover {
+    color: #1100fc;
+    font-weight: 700;
+}
+
+.my:hover,
+.portfolio:hover,
+.gallery:hover {
+    color: #1100fc;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    min-height: 900px;
+    /*최소 높이 설정*/
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-size: 13.5px;
+    font-weight: 500px;
+}
+
+.home_main_text {
+    font-size: 27px;
+    font-weight: 600;
+    position: relative;
+    left: 650px;
+    top: 40px;
+}
+
+.home_img {
+    position: relative;
+    left: 550px;
+    bottom: 770px;
+    height: 300px;
+    width: 400px;
+}
+
+.home_text {
+    font-size: 19px;
+    font-weight: 600;
+    position: relative;
+    left: 307px;
+    top: 450px;
+}
